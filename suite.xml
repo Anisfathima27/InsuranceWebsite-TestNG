@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<parameter name="search" value="insurance"></parameter>
+<parameter name="emptyfield" value="  "></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="org.plan.SpecialInsurancePresent"/>
+      <class name="org.plan.ElementsPresent"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

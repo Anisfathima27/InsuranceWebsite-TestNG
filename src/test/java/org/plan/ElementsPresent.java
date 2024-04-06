@@ -29,6 +29,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.internal.junit.ArrayAsserts;
@@ -269,9 +270,9 @@ public class ElementsPresent extends BaseClass {
 		SoftAssert s=new SoftAssert();
 		s.assertTrue(e.getSerchBox().isEnabled(), "check search box");
 	}
-	
+	@Parameters({"emptyfield"})
 	@Test(priority=16,groups= {"Search"})
-	private void srchBoxEmpty() throws InterruptedException {
+	private void srchBoxEmpty(String srch) throws InterruptedException {
 
 		ElementPojo e=new ElementPojo();
 		
@@ -285,7 +286,7 @@ public class ElementsPresent extends BaseClass {
 		click(e.getSerchBox());
 		WebElement bx = driver.findElement(By.xpath("//input[@id='navbar-global-search']"));
 	
-		passtext("  ", bx);
+		passtext(srch, bx);
 		Thread.sleep(3000);
 		WebElement clk = driver.findElement(By.xpath("(//button[@type='submit'])[1]"));
 		Thread.sleep(2000);

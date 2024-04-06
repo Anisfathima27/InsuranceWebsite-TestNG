@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="search" value="insurance"/>
   <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="Form"/>
-      </run>
-    </groups>
     <classes>
       <class name="org.plan.ElementsPresent">
         <methods>
-          <include name="endDtPressent"/>
-          <include name="findYourPlanIsPresent"/>
-          <include name="strtDatePresent"/>
-          <include name="viewPlanSub"/>
-          <include name="brthDatePresent"/>
-          <include name="citizenShipPresent"/>
-          <include name="homeCountryPresent"/>
-          <include name="studentPresent"/>
-          <include name="prmryDestPresent"/>
+          <include name="warnMsg"/>
+          <include name="launchBrowser"/>
         </methods>
       </class> <!-- org.plan.ElementsPresent -->
     </classes>
