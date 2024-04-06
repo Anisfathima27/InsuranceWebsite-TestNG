@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-05T12:17:07 IST" name="Suite" finished-at="2024-04-05T12:17:29 IST" duration-ms="22236">
+    <groups>
+      <group name="Form">
+        <method signature="ElementsPresent.findYourPlanIsPresent()[pri:1, instance:org.plan.ElementsPresent@19932c16]" name="findYourPlanIsPresent" class="org.plan.ElementsPresent"/>
+        <method signature="ElementsPresent.prmryDestPresent()[pri:2, instance:org.plan.ElementsPresent@19932c16]" name="prmryDestPresent" class="org.plan.ElementsPresent"/>
+        <method signature="ElementsPresent.studentPresent()[pri:3, instance:org.plan.ElementsPresent@19932c16]" name="studentPresent" class="org.plan.ElementsPresent"/>
+        <method signature="ElementsPresent.brthDatePresent()[pri:4, instance:org.plan.ElementsPresent@19932c16]" name="brthDatePresent" class="org.plan.ElementsPresent"/>
+        <method signature="ElementsPresent.homeCountryPresent()[pri:5, instance:org.plan.ElementsPresent@19932c16]" name="homeCountryPresent" class="org.plan.ElementsPresent"/>
+        <method signature="ElementsPresent.citizenShipPresent()[pri:6, instance:org.plan.ElementsPresent@19932c16]" name="citizenShipPresent" class="org.plan.ElementsPresent"/>
+        <method signature="ElementsPresent.strtDatePresent()[pri:7, instance:org.plan.ElementsPresent@19932c16]" name="strtDatePresent" class="org.plan.ElementsPresent"/>
+        <method signature="ElementsPresent.endDtPressent()[pri:8, instance:org.plan.ElementsPresent@19932c16]" name="endDtPressent" class="org.plan.ElementsPresent"/>
+        <method signature="ElementsPresent.viewPlanSub()[pri:9, instance:org.plan.ElementsPresent@19932c16]" name="viewPlanSub" class="org.plan.ElementsPresent"/>
+      </group> <!-- Form -->
+    </groups>
+    <test started-at="2024-04-05T12:17:07 IST" name="Test" finished-at="2024-04-05T12:17:29 IST" duration-ms="22236">
+      <class name="org.plan.ElementsPresent">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:org.plan.ElementsPresent@19932c16]" started-at="2024-04-05T12:17:07 IST" name="launchBrowser" finished-at="2024-04-05T12:17:09 IST" duration-ms="2104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="findYourPlanIsPresent()[pri:1, instance:org.plan.ElementsPresent@19932c16]" started-at="2024-04-05T12:17:09 IST" name="findYourPlanIsPresent" finished-at="2024-04-05T12:17:24 IST" duration-ms="15760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findYourPlanIsPresent -->
+        <test-method signature="prmryDestPresent()[pri:2, instance:org.plan.ElementsPresent@19932c16]" started-at="2024-04-05T12:17:24 IST" name="prmryDestPresent" finished-at="2024-04-05T12:17:25 IST" duration-ms="724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prmryDestPresent -->
+        <test-method signature="studentPresent()[pri:3, instance:org.plan.ElementsPresent@19932c16]" started-at="2024-04-05T12:17:25 IST" name="studentPresent" finished-at="2024-04-05T12:17:26 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- studentPresent -->
+        <test-method signature="brthDatePresent()[pri:4, instance:org.plan.ElementsPresent@19932c16]" started-at="2024-04-05T12:17:26 IST" name="brthDatePresent" finished-at="2024-04-05T12:17:26 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brthDatePresent -->
+        <test-method signature="homeCountryPresent()[pri:5, instance:org.plan.ElementsPresent@19932c16]" started-at="2024-04-05T12:17:26 IST" name="homeCountryPresent" finished-at="2024-04-05T12:17:27 IST" duration-ms="500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeCountryPresent -->
+        <test-method signature="citizenShipPresent()[pri:6, instance:org.plan.ElementsPresent@19932c16]" started-at="2024-04-05T12:17:27 IST" name="citizenShipPresent" finished-at="2024-04-05T12:17:27 IST" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- citizenShipPresent -->
+        <test-method signature="strtDatePresent()[pri:7, instance:org.plan.ElementsPresent@19932c16]" started-at="2024-04-05T12:17:27 IST" name="strtDatePresent" finished-at="2024-04-05T12:17:28 IST" duration-ms="1370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- strtDatePresent -->
+        <test-method signature="endDtPressent()[pri:8, instance:org.plan.ElementsPresent@19932c16]" started-at="2024-04-05T12:17:28 IST" name="endDtPressent" finished-at="2024-04-05T12:17:29 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endDtPressent -->
+        <test-method signature="viewPlanSub()[pri:9, instance:org.plan.ElementsPresent@19932c16]" started-at="2024-04-05T12:17:29 IST" name="viewPlanSub" finished-at="2024-04-05T12:17:29 IST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewPlanSub -->
+      </class> <!-- org.plan.ElementsPresent -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
