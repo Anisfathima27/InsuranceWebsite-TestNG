@@ -303,17 +303,8 @@ public class ElementsPresent extends BaseClass {
 			s.assertAll();
 		} else {
 
-			
+			System.out.println("it shows relevent topics");
 		}
-		
-//		boolean displayed = e.getNoReslt().isDisplayed();
-//		System.out.println(displayed);
-//        String text = e.getNoReslt().getText();
-//        System.out.println(text);
-//        SoftAssert s=new SoftAssert();
-//        s.assertEquals(text, "No Results Found");
-//        s.assertAll();
-        		
 	}
 	
 	
@@ -323,20 +314,8 @@ public class ElementsPresent extends BaseClass {
 		return new Object[][] {{"Anis"},{"insurance"},{"  "}
 		};
 	}
-//		
-//	@Test(priority=17,groups= {"Search"})
-//	private void warnMsg() {
-//
-//		//strong[text()='No Results Found']
-//		ElementPojo e=new ElementPojo();
-//		boolean displayed = e.getNoReslt().isDisplayed();
-//		System.out.println(displayed);
-//        String text = e.getNoReslt().getText();
-//        System.out.println(text);
-//        SoftAssert s=new SoftAssert();
-//        s.assertEquals(text, "No Results Found");
-//        s.assertAll();
-//	}	
+
+
 	
 	
 	
