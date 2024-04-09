@@ -53,6 +53,18 @@ public class BaseClass {
 	public static void click(WebElement clk) {
 		clk.click();
 	}
+	public static void doubleClick(WebElement target) {
+
+		a=new Actions(driver);
+		a.doubleClick(target).perform();
+	}
+	
+	public static void moveToElement(WebElement ele) {
+   
+		a=new Actions(driver);
+		a.moveToElement(ele).perform();
+		
+	}
 
 	public static void passtext(String text, WebElement passtext) {
 		passtext.sendKeys(text);
