@@ -54,16 +54,13 @@ public class BaseClass {
 		clk.click();
 	}
 	public static void doubleClick(WebElement target) {
-
 		a=new Actions(driver);
 		a.doubleClick(target).perform();
 	}
 	
 	public static void moveToElement(WebElement ele) {
-   
 		a=new Actions(driver);
 		a.moveToElement(ele).perform();
-		
 	}
 
 	public static void passtext(String text, WebElement passtext) {
@@ -102,18 +99,34 @@ public class BaseClass {
 	public static void indexselect(WebElement sel, int index) {
 		s = new Select(sel);
 		s.selectByIndex(index);
-
 	}
 
 	public static void valueSelect(WebElement val, String text) {
 		s = new Select(val);
 		s.selectByValue(text);
-
 	}
 
 	public static void visibleText(WebElement vt, String text) {
 		s = new Select(vt);
 		s.selectByVisibleText(text);
+	}
+	
+	public static boolean isEnabled(WebElement enable) {
+
+		return enable.isEnabled();
+
+	}
+
+	public static boolean isSelected(WebElement select) {
+
+		return select.isSelected();
+
+	}
+
+	public static boolean isDisplayed(WebElement display) {
+
+		return display.isDisplayed();
+
 	}
 
 	public static String readDatafromexcel(int row, int cell) throws IOException {

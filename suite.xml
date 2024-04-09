@@ -6,8 +6,8 @@
 <parameter name="emptyfield" value="  "></parameter>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="org.plan.SpecialInsurancePresent"/>
       <class name="org.plan.ElementsPresent"/>
+      <class name="org.plan.SpecialInsurancePresent"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -5,8 +5,7 @@
     <classes>
       <class name="org.plan.ElementsPresent">
         <methods>
-          <include name="srchBoxEmpty"/>
-          <include name="warnMsg"/>
+          <include name="srchBoxEmpty" invocation-numbers="1"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- org.plan.ElementsPresent -->

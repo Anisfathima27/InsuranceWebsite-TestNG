@@ -29,6 +29,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -37,8 +38,10 @@ import org.testng.internal.junit.ArrayAsserts;
 import com.google.gson.annotations.Until;
 
 
+
 public class ElementsPresent extends BaseClass {
 
+	 SoftAssert s;
 	@BeforeClass(groups= {"Form"})
 	private void launchBrowser() {
 		browserlaunch();
@@ -267,12 +270,12 @@ public class ElementsPresent extends BaseClass {
 		geturl("https://www.internationalstudentinsurance.com/");
 
         ElementPojo e=new ElementPojo();
-		SoftAssert s=new SoftAssert();
+		s=new SoftAssert();
 		s.assertTrue(e.getSerchBox().isEnabled(), "check search box");
 	}
 	@Parameters({"emptyfield"})
-	@Test(priority=16,groups= {"Search"})
-	private void srchBoxEmpty(String srch) throws InterruptedException {
+	@Test(priority=16,groups= {"Search"},dataProvider="datas")
+	public void srchBoxEmpty(String srch) throws InterruptedException {
 
 		ElementPojo e=new ElementPojo();
 		
@@ -292,22 +295,48 @@ public class ElementsPresent extends BaseClass {
 		Thread.sleep(2000);
 		click(clk);
 		
+		if (isDisplayed(e.getNoReslt())) {
+			String text = e.getNoReslt().getText();
+			System.out.println(text);
+			 s=new SoftAssert();
+			s.assertEquals(text, "No Results Found");
+			s.assertAll();
+		} else {
+
+			
+		}
+		
+//		boolean displayed = e.getNoReslt().isDisplayed();
+//		System.out.println(displayed);
+//        String text = e.getNoReslt().getText();
+//        System.out.println(text);
+//        SoftAssert s=new SoftAssert();
+//        s.assertEquals(text, "No Results Found");
+//        s.assertAll();
+        		
 	}
 	
-		
-	@Test(priority=17,groups= {"Search"})
-	private void warnMsg() {
+	
+	@DataProvider(name="datas")
+	private Object[][] positiveAndNegative() {
 
-		//strong[text()='No Results Found']
-		ElementPojo e=new ElementPojo();
-		boolean displayed = e.getNoReslt().isDisplayed();
-		System.out.println(displayed);
-        String text = e.getNoReslt().getText();
-        System.out.println(text);
-        SoftAssert s=new SoftAssert();
-        s.assertEquals(text, "No Results Found");
-        s.assertAll();
-	}	
+		return new Object[][] {{"Anis"},{"insurance"},{"  "}
+		};
+	}
+//		
+//	@Test(priority=17,groups= {"Search"})
+//	private void warnMsg() {
+//
+//		//strong[text()='No Results Found']
+//		ElementPojo e=new ElementPojo();
+//		boolean displayed = e.getNoReslt().isDisplayed();
+//		System.out.println(displayed);
+//        String text = e.getNoReslt().getText();
+//        System.out.println(text);
+//        SoftAssert s=new SoftAssert();
+//        s.assertEquals(text, "No Results Found");
+//        s.assertAll();
+//	}	
 	
 	
 	

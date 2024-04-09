@@ -9,6 +9,8 @@ import org.testng.asserts.SoftAssert;
 
 public class SpecialInsurancePresent extends BaseClass {
 
+	 SoftAssert s=new SoftAssert();
+	
 	@BeforeClass
 	private void launchBrowser() {
 		browserlaunch();
@@ -20,11 +22,8 @@ public class SpecialInsurancePresent extends BaseClass {
 
 		geturl("https://www.internationalstudentinsurance.com/");
 		boolean contains = driver.getPageSource().contains("Find your plan");
-
-		SoftAssert s=new SoftAssert();
 		s.assertTrue(contains,"check find your plan is present or not");
 		s.assertAll();
-		
 
 	}
 	@Test(priority=-9)
@@ -32,7 +31,6 @@ public class SpecialInsurancePresent extends BaseClass {
 
 		ElementPojo e=new ElementPojo();
 		String text = e.getDentalIns().getText();
-		SoftAssert s=new SoftAssert();
 		s.assertEquals(text, "Dental & Vision Insurance");
 		s.assertAll();
 	}
@@ -43,7 +41,7 @@ public class SpecialInsurancePresent extends BaseClass {
 		
 	ElementPojo e=new ElementPojo();
 	String text = e.getF1stdIns().getText();
-	SoftAssert s=new SoftAssert();
+	 s=new SoftAssert();
 	s.assertEquals(text, "F-1 Student Insurance");
 	s.assertAll();
 	}
@@ -52,7 +50,6 @@ public class SpecialInsurancePresent extends BaseClass {
 		
 		ElementPojo e=new ElementPojo();
 		String text = e.getDepIns().getText();
-		SoftAssert s=new SoftAssert();
 		s.assertEquals(text, "Dependent Insurance");
 		s.assertAll();
 		
@@ -61,7 +58,6 @@ public class SpecialInsurancePresent extends BaseClass {
 	private void hghSclIns()  {
 		ElementPojo e=new ElementPojo();
 		String text = e.getHghSclIns().getText();
-		SoftAssert s=new SoftAssert();
 		s.assertEquals(text, "High School Insurance");
 		s.assertAll();
 	}
@@ -70,7 +66,6 @@ public class SpecialInsurancePresent extends BaseClass {
 
 		ElementPojo e=new ElementPojo();
 		String text = e.getJ1Stdins().getText();
-		SoftAssert s=new SoftAssert();
 		s.assertEquals(text, "J Visa Insurance");
 		s.assertAll();
 	}
@@ -79,7 +74,6 @@ public class SpecialInsurancePresent extends BaseClass {
 	private void optIns() {
 		ElementPojo e=new ElementPojo();
 		String text = e.getOptIns().getText();
-		SoftAssert s=new SoftAssert();
 		s.assertEquals(text, "OPT Insurance");
 		s.assertAll();
 		
@@ -89,7 +83,6 @@ public class SpecialInsurancePresent extends BaseClass {
 
 		ElementPojo e=new ElementPojo();
 		String text = e.getSchengenVisaIns().getText();
-		SoftAssert s=new SoftAssert();
 		s.assertEquals(text, "Schengen Visa Insurance");
 		s.assertAll();
 	}
@@ -98,7 +91,6 @@ public class SpecialInsurancePresent extends BaseClass {
 
 		ElementPojo e=new ElementPojo();
 		String text = e.getStdyAbdIns().getText();
-		SoftAssert s=new SoftAssert();
 		s.assertEquals(text, "Study Abroad Insurance");
 		s.assertAll();
 		

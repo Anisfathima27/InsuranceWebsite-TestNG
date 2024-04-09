@@ -14,6 +14,7 @@
 
 		<classes>
 			<class name="org.plan.ElementsPresent"></class>
+			<class name="org.plan.SpecialInsurancePresent"></class>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
